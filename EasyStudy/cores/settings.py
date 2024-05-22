@@ -38,7 +38,11 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'Users' # Local application
+    'courses.apps.CoursesConfig', # Local application
+    'reviews.apps.ReviewsConfig', # Local application
+    'common.apps.CommonConfig', # Local application
+    'users.apps.UsersConfig', # Local application
+    'schedules.apps.SchedulesConfig', # Local application
 ]
 
 MIDDLEWARE = [
@@ -78,7 +82,7 @@ WSGI_APPLICATION = 'cores.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        'NAME': BASE_DIR / 'dbm.sqlite3',
     }
 }
 
